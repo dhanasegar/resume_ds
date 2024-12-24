@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@0((ij7wn8e0!m%mv0u(xw++bs8z-k=1#$h4srwmpf@j-$ai^w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app", "127.0.0.1"]
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1",".now.sh"]
 
 
 # Application definition
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'resume.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'resume',
-        'USER':'root',
-        'PASSWORD':'root',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER':'postgres',
+        'PASSWORD':'UUQSXguvozpPHAuMuPqtNIFfTwvegYSE',
+        'HOST':'junction.proxy.rlwy.net',
+        'PORT':'24600',
     }
 }
 
