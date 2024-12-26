@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'resume.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'portfolio',
         'USER':'postgres',
-        'PASSWORD':'UUQSXguvozpPHAuMuPqtNIFfTwvegYSE',
-        'HOST':'junction.proxy.rlwy.net',
-        'PORT':'24600',
+        'PASSWORD':'root',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
