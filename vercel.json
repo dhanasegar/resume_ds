@@ -1,10 +1,9 @@
 {
   "builds": [
-    {
-      "src": "resume/wsgi.py",
+    { "src": "resume/wsgi.py",
       "use": "@vercel/python",
-      "config": {"maxLambdaSize": "30mb", "runtime": "python3.10"
-    },
+      "config": {"maxLambdaSize": "30mb", "runtime": "python3.10"}
+  },
     {
       "src": "buld.files.sh",
       "use": "@vercel/static-build",
