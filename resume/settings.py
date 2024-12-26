@@ -81,20 +81,20 @@ WSGI_APPLICATION = 'resume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'resume_demo',
-#         'USER':'resume_demo_user',
-#         'PASSWORD':'qP6mhSIO2FGD1mWVNDuL2Y5kmVPBt00m',
-#         'HOST':'dpg-ctmp3ejv2p9s73fdoq2g-a',
-#         'PORT':'5432',
-#     }
-# }
-
 DATABASES = {
-    'default':dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio',
+        'USER':'postgres',
+        'PASSWORD':'root',
+        'HOST':'localhost',
+        'PORT':'5432',
+    }
 }
+
+# DATABASES = {
+#     'default':dj_database_url.parse(os.environ.get('postgresql://resume_demo_user:qP6mhSIO2FGD1mWVNDuL2Y5kmVPBt00m@dpg-ctmp3ejv2p9s73fdoq2g-a.oregon-postgres.render.com/resume_demo'))
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
